@@ -24,11 +24,12 @@ export class VideoComponent implements OnInit {
     let myVideo = this.myVideo.nativeElement;
     let theirVideo = this.theirVideo.nativeElement;
     this.peer = new Peer({
-      // host: 'su',
-      // path: '/peerjs',
-      // secure: true,
+      host: 'peerserverpro.herokuapp.com',
+      key: 'peerjs',
+      secure: true,
+      port: 443
       // debug: 3,
-      key: 'wty8jwufmspuv7vi'      
+      // key: 'wty8jwufmspuv7vi'      
     });
 
     setTimeout(() => {
