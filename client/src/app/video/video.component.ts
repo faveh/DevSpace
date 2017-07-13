@@ -24,10 +24,11 @@ export class VideoComponent implements OnInit {
     let myVideo = this.myVideo.nativeElement;
     let theirVideo = this.theirVideo.nativeElement;
     this.peer = new Peer({
-      host: 'codeaddict.me',
-      path: '/peerjs',
-      secure: true,
-      debug: 3
+      // host: 'codeaddict.me',
+      // path: '/peerjs',
+      // secure: true,
+      // debug: 3
+      key: 'wty8jwufmspuv7vi'
     });
 
     setTimeout(() => {
@@ -89,7 +90,8 @@ export class VideoComponent implements OnInit {
     let myVideo = this.myVideo.nativeElement;
     let theirVideo = this.theirVideo.nativeElement;
     var localvar = this.peer;
-
+    // var fname = this.anotherid;
+    
     //var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
     var n = <any>navigator;
