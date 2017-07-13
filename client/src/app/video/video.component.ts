@@ -24,11 +24,11 @@ export class VideoComponent implements OnInit {
     let myVideo = this.myVideo.nativeElement;
     let theirVideo = this.theirVideo.nativeElement;
     this.peer = new Peer({
-      // host: 'codeaddict.me',
+      // host: 'su',
       // path: '/peerjs',
       // secure: true,
-      // debug: 3
-      key: 'wty8jwufmspuv7vi'
+      // debug: 3,
+      key: 'wty8jwufmspuv7vi'      
     });
 
     setTimeout(() => {
